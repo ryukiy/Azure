@@ -52,8 +52,8 @@ MgmtIp =".".join((myIp.split('.')[0], myIp.split('.')[1], '0', '4'))
 #We know that DB IP is going to have x.x.4.5...so just need prefix
 DBServerIP = ".".join((myIp.split('.')[0], myIp.split('.')[1], '4', '5'))
 
-#The api key is pre-generated for  paloalto/panday
-api_key = "LUFRPT04UnhrbVJOcEp5UGEwWnJTdlVIVDFzc1Y4bDA9cmZmMGpPeExzaGhWNnl3OGlYUU90UT09"
+#The api key is pre-generated for  paloalto/password!123
+api_key = "LUFRPT1IU1JvRXN5VVJsaktZT1BBT1djSUhjOGU2ZUk9UEowOTJIeTBhSnRXdzZkSlAzSGhZditFUm1DUytZOStodEx3QWk5djRrTT0="
 
 
 #Need this to by pass invalid certificate issue. Should try to fix this
