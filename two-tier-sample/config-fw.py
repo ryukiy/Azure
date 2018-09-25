@@ -81,7 +81,7 @@ def main():
 #    t2.start()
 #    if(config_wp(sys.argv[1]) == 'false'):
 #         logger.info("[ERROR]: Config WP failed")
-#         return
+    return
 
 
 
