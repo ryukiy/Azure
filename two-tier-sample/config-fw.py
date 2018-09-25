@@ -52,8 +52,8 @@ MgmtIp =".".join((myIp.split('.')[0], myIp.split('.')[1], '0', '4'))
 #We know that DB IP is going to have x.x.4.5...so just need prefix
 DBServerIP = ".".join((myIp.split('.')[0], myIp.split('.')[1], '4', '5'))
 
-#The api key is pre-generated for  paloalto/Pal0Alt0@123
-api_key = "LUFRPT1CU0dMRHIrOWFET0JUNzNaTmRoYmkwdjBkWWM9alUvUjBFTTNEQm93Vmx0OVhFRlNkOXdJNmVwYWk5Zmw4bEs3NjgwMkh5QT0="
+#The api key is pre-generated for  paloalto/panday
+api_key = "LUFRPT04UnhrbVJOcEp5UGEwWnJTdlVIVDFzc1Y4bDA9cmZmMGpPeExzaGhWNnl3OGlYUU90UT09"
 
 
 #Need this to by pass invalid certificate issue. Should try to fix this
@@ -71,15 +71,15 @@ def main():
     #global baseStorageAccountName
 
     #baseStorageAccountName = sys.argv[2]
-    config_file_url = "https://raw.githubusercontent.com/PaloAltoNetworks/azure/master/two-tier-sample/"
+    config_file_url = "https://raw.githubusercontent.com/ryukiy/azure/master/two-tier-sample/"
 
     t1 = threading.Thread(name='config_fw',target=config_fw)
     t1.start()
 #    if (config_fw() == 'false'):
 #        logger.info("[ERROR]: Config FW Failed")
 #        return
-    t2 = threading.Thread(name='config_wp', target=config_wp, args=(sys.argv[1],))
-    t2.start()
+#    t2 = threading.Thread(name='config_wp', target=config_wp, args=(sys.argv[1],))
+#    t2.start()
 #    if(config_wp(sys.argv[1]) == 'false'):
 #         logger.info("[ERROR]: Config WP failed")
 #         return
